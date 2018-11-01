@@ -1,0 +1,19 @@
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @media only screen and (max-width: $bp-medium) {
+        margin-top: 0rem;
+    }
+
+    & > * {
+        padding: 2rem 3rem;
+
+        @media only screen and (max-width: $bp-medium) {
+            padding: 0rem 0rem;
+        }
+    }
+}

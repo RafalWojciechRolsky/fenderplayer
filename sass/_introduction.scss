@@ -1,0 +1,83 @@
+.introduction {
+    // background-color: var(--col4);
+    // background-color: #3c5a5d;
+    grid-column: 1 / 2;
+
+    .heading-2--list {
+        margin-top: -2.2rem;
+    }
+
+    &__text {
+        // -webkit-columns: 4 15rem;
+        // -moz-columns: 3 21rem;
+        columns: 3 15rem;
+        column-gap: 2rem;
+        padding: 2rem 3rem;
+        margin-top: 1rem;
+        border-radius: 2rem;
+
+        @media only screen and (max-width: $bp-small) {
+            columns: 2 12rem;
+        }
+
+        @media only screen and (max-width: $bp-vsmall) {
+            columns: 1;
+        }
+
+
+
+        p {
+            margin-bottom: 1.3rem;
+            color: var(--col1);
+            text-align: justify;
+            padding: .4rem 1rem;
+        }
+    }
+
+    &__lista {
+        margin: 1rem;
+        padding: 1rem;
+        margin-top: -1rem;
+        color: var(--col1);
+
+
+        li {
+            list-style: none;
+            // font-size: 1.7rem;
+            text-transform: capitalize;
+
+
+            &::before {
+                content: '';
+                display: inline-block;
+                //background-image: url(../img/chevron-right.svg);
+                height: 2rem;
+                width: 2rem;
+                margin-left: -2rem;
+                transform: translateY(.5rem);
+                background-color: var(--col1);
+                -webkit-mask-image: url(../img/chevron-right.svg);
+            }
+        }
+    }
+
+    &__link {
+        color: var(--col1);
+        transition: all .2s;
+
+        &:active,
+        &:visited {
+            text-decoration: none;
+            color: var(--col1);
+
+        }
+
+        &:hover {
+            text-decoration: underline;
+            color: var(--col1);
+            box-shadow: 0 1rem 2rem rgba(0,0,0, .1);
+        }
+
+    }
+
+}

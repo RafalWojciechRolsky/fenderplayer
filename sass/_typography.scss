@@ -1,0 +1,127 @@
+/*
+.btn {
+    padding: .5rem 2.5rem;
+    border: none;
+    border-radius: 2rem;
+    font-family: Dosis;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    background-color: #7f9684;
+    outline: none;
+    transition: all .2s;
+
+    &:hover {
+        background-color: #7f9684;
+        transform: translateY(-.1rem);
+        cursor: pointer;
+        box-shadow: 0 1.5rem 2rem rgba(0,0,0,.1);
+    }
+}
+*/
+
+.btn {
+
+    &,
+    &:link,
+    &:visited {
+    margin: 2rem;
+    display: inline-block;
+    text-decoration: none;
+    padding: .5rem 1.5rem;
+    border-radius: .7rem;
+    text-transform: uppercase;
+    color: var(--Maple);
+    background-color: var(--col3);
+    transition: all .2s;
+    cursor: pointer;
+    }
+
+    &:hover {
+        transform: translateY(-.3rem);
+        box-shadow: 0 .5rem .5rem rgba(0,0,0,.1);
+    }
+
+}
+
+
+
+
+
+.heading-1 {
+    color: var(--Maple);
+    text-shadow: 0 .4rem .6rem rgba(0,0,0,.4);
+    font-size: 9rem;
+    font-family: Lobster;
+
+    @media only screen and (max-width: $bp-larg) {
+        font-size: 8rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        font-size: 7rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 6rem;
+    }
+
+    @media only screen and (max-width: $bp-vsmall) {
+        font-size: 5rem;
+    }
+}
+
+.heading-2 {
+    color: var(--col1);
+    text-shadow: 0 .2rem .3rem rgba(0,0,0,.4);
+    font-size: 6rem;
+    // text-transform: uppercase;
+    font-family: Lobster;
+    margin-top: 2rem;
+
+    @media only screen and (max-width: $bp-medium) {
+    margin-left: 3rem;
+    }
+}
+
+.heading-3 {
+    color: var(--col1);
+    font-size: 2.9rem;
+    text-shadow: 0 .2rem .2rem rgba(0,0,0,.2);
+    font-family: Lobster;
+    text-transform:capitalize;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+
+    // @media only screen and (max-width: $bp-medium) {
+    //     margin-top: 2rem;
+    // }
+
+    // @media only screen and (max-width: $bp-medium) {
+    //     margin-top: 10rem;
+    // }
+    //
+    // @media only screen and (max-width: $bp-small) {
+    //     margin-top: 12rem;
+    // }
+    //
+    // @media only screen and (max-width: $bp-vsmall) {
+    //     margin-top: 14rem;
+    // }
+
+    &--footer {
+        margin-bottom: 0rem;
+        margin-left: 0rem;
+        text-align: center;
+
+    }
+
+}
+
+.heading-4 {
+    font-family: Lobster;
+}
+
+.heading--grid {
+    color: var(--col1)
+
+}

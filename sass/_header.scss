@@ -1,0 +1,57 @@
+.header {
+    background-color: var(--col2);
+    grid-column: 1 / 2;
+    background-image: url(../img/fender-player-strat.jpg);
+    box-shadow: 0 .3rem .3rem rgba(0,0,0,.6);
+    background-blend-mode:lighten;
+    border-radius: 2rem;
+    height: 55rem;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-template-rows: repeat(3, 1fr);
+
+    @media only screen and (max-width: $bp-medium) {
+        border-radius: 0rem;
+    }
+
+    &__label {
+        grid-column: 2 / 2;
+        grid-row: 2 / 3;
+
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+
+        .btn--header {
+            font-size: 2.5rem;
+        }
+    }
+
+    .michal {
+        background-color: var(--col1);
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        width: 40rem;
+        padding: 2rem;
+        border-radius: 2rem;
+        box-shadow: 0 1rem 2rem rgba(0,0,0,.3);
+        margin-top: 3rem;
+        transition: all .2s;
+
+        &__photo {
+            width: 6rem;
+            height: 6rem;
+            border-radius: 50%;
+        }
+
+        &__text {
+            margin-left: 2rem;
+            color: var(--Maple);
+            font-size: 1.4rem;
+            transition: all .2s;
+        }
+    }
+
+}

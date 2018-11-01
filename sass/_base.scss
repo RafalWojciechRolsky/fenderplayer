@@ -1,0 +1,75 @@
+:root {
+    --col1: #252527;
+    --col2: rgb(13, 42, 59);
+    --col3: #a72d22;
+    --col4: #9fa089;
+    --Sunburst: #c63c00;
+    --Black: #000;
+    --Buttercream: #f4d367;
+    --PolarWhite: #e7e1db;
+    --SageGreenMetallic: #9cb7a6;
+    --SonicRed: #c50003;
+    --Tidepool: #317782;
+    --Maple: #f5f5f5;
+    --PauFerro: #624e43;
+}
+
+$bp-largest: 75em; //1200px
+$bp-larg: 68.75em; //1100px
+$bp-medium: 56.25em; //900px
+$bp-small: 37.5em; //600px
+$bp-vsmall: 31.5em; //500px
+$bp-vvsmall: 25.5em; //300px
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; //1rem = 10px, 10px/16px = 62.5%
+
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 45%;
+    }
+
+    @media only screen and (max-width: $bp-larg) {
+        font-size: 50%;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        font-size: 45%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 40%;
+    }
+
+    @media only screen and (max-width: $bp-vsmall) {
+        font-size: 38%;
+    }
+
+    @media only screen and (max-width: $bp-vvsmall) {
+        font-size: 35%;
+    }
+
+
+}
+
+body {
+    font-family: 'Dosis';
+    font-size: 2rem;
+    font-weight: 200;
+    color: var(--col1);
+    background-color: var(--Maple);
+    // background-image: radial-gradient(rgb(73, 70, 70), rgb(11, 29, 37));
+
+
+}

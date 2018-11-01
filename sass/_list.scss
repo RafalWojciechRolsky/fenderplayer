@@ -1,0 +1,61 @@
+.list {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    background-color: var(--col2);
+    background-image: url(../img/lista-sklad.jpg);
+    background-size: cover;
+    box-shadow: 0 .3rem .3rem rgba(0,0,0,.6);
+    background-blend-mode:lighten;
+    grid-column: 1 / 2;
+    border-radius: 2rem;
+
+    &__lista {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: 2rem;
+
+    }
+
+    &__items {
+        list-style: none;
+    }
+
+    &__link {
+        transition: all .2s;
+
+        &::before {
+            content: "";
+            display: inline-block;
+            height: 2rem;
+            width: 2rem;
+            background-color: var(--Maple);
+            -webkit-mask-image: url(../img/check.svg);
+            margin-right: 1rem;
+        }
+
+        &:link,
+        &:visited {
+            color: var(--Maple);
+            text-decoration: none;
+            font-size: 2.5rem;
+            margin: 1rem 2rem;
+            cursor: pointer;
+            text-shadow: 0 .3rem .3rem rgba(0,0,0,.6);
+            font-family: Lobster;
+        }
+
+        &:hover {
+            color: var(--col3);
+        }
+    }
+
+    .heading-2--list {
+        color: var(--Maple);
+
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        display: none;
+    }
+
+}
