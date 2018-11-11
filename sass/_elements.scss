@@ -4,6 +4,26 @@
     display: grid;
     grid-gap: 3rem;
     grid-template-columns: repeat(6, 1fr);
+
+    @media only screen and (max-width: $bp-medium) {
+        grid-template-columns: 1fr;
+        grid-gap: 0rem;
+        grid-template-rows: auto
+                        repeat(1, 38rem) //Przetworniki
+                        repeat(1, 32rem) //22 Progi Medium Jumbo
+                        repeat(1, 123rem) //Konfiguracja Pickupów
+                        repeat(1, 116rem) //Regulacja Tone / Elektronika
+                        repeat(1, 32rem) //Korpus
+                        repeat(1, 32rem) //Gryf
+                        repeat(1, 125rem) //Mostek
+                        repeat(1, 106rem) //Podstrunnica
+                        repeat(1, 104rem) //Kolory
+                        repeat(1, 90rem) //F Logo
+                        repeat(1, 33rem) //Nowe Logo
+                        repeat(1, 35rem); //Główka Na Połysk
+    }
+
+
     grid-template-rows: auto
                     repeat(1, 36rem)
                     repeat(1, 82rem)
@@ -14,29 +34,29 @@
                     repeat(1, 52rem)
                     repeat(1, 31rem);
 
-                    @media only screen and (max-width: $bp-vsmall) {
-                        grid-template-rows: auto
-                                        repeat(1, 36rem)
-                                        repeat(1, 82rem)
-                                        repeat(1, 84rem)
-                                        repeat(1, 82rem)
-                                        repeat(1, 76rem)
-                                        repeat(1, 71rem)
-                                        repeat(1, 52rem)
-                                        repeat(1, 31rem);
-                    }
+    @media only screen and (max-width: $bp-vsmall) {
+        grid-template-rows: auto
+                        repeat(1, 36rem)
+                        repeat(1, 82rem)
+                        repeat(1, 84rem)
+                        repeat(1, 82rem)
+                        repeat(1, 76rem)
+                        repeat(1, 71rem)
+                        repeat(1, 52rem)
+                        repeat(1, 31rem);
+    }
 
-                    @media only screen and (max-width: $bp-vvsmall) {
-                        grid-template-rows: auto
-                                        repeat(1, 40rem)
-                                        repeat(1, 82rem)
-                                        repeat(1, 83rem)
-                                        repeat(1, 87rem)
-                                        repeat(1, 78rem)
-                                        repeat(1, 73rem)
-                                        repeat(1, 58rem)
-                                        repeat(1, 31rem);
-                    }
+    @media only screen and (max-width: $bp-vvsmall) {
+        grid-template-rows: auto
+                        repeat(1, 40rem)
+                        repeat(1, 82rem)
+                        repeat(1, 83rem)
+                        repeat(1, 87rem)
+                        repeat(1, 78rem)
+                        repeat(1, 73rem)
+                        repeat(1, 58rem)
+                        repeat(1, 31rem);
+    }
 
     & > * {
         border-radius: 2rem;
@@ -144,6 +164,69 @@
         grid-row: 9 / 10;
     }
 
+    @media only screen and (max-width: $bp-medium) {
+
+        &__przetworniki { //flip
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+        }
+
+        &__22 { //flip
+            grid-column: 1 / 2;
+            grid-row: 3 / 4;
+        }
+
+        &__konfiguracja { //płaski
+            grid-column: 1 / 2;
+            grid-row: 4 / 5;
+        }
+
+        &__tone { //płaski
+            grid-column: 1 / 2;
+            grid-row: 5 / 6;
+        }
+
+        &__korpus { //flip
+            grid-column: 1 / 2;
+            grid-row: 6 / 7;
+        }
+
+        &__gryf { //flip
+            grid-column: 1 / 2;
+            grid-row: 7 / 8;
+        }
+
+        &__mostek { //płaski
+            grid-column: 1 / 2;
+            grid-row: 8 / 9;
+        }
+
+        &__podstrunnica { //płaski
+            grid-column: 1 / 2;
+            grid-row: 9 / 10;
+        }
+
+        &__kolory { //płaski
+            grid-column: 1 / 2;
+            grid-row: 10 / 11;
+        }
+
+        &__flogo { //płaski
+            grid-column: 1 / 2;
+            grid-row: 11 / 12;
+        }
+
+        &__nlogo { //flip
+            grid-column: 1 / 2;
+            grid-row: 12 / 13;
+        }
+
+        &__glowka { //flip
+            grid-column: 1 / 2;
+            grid-row: 13 / 14;
+        }
+    }
+
     //animacja kart
     &__przetworniki,
     &__korpus,
@@ -162,6 +245,10 @@
 
         &:hover .card {
             transform: rotateY(180deg);
+
+                @media only screen and (max-width: $bp-medium) {
+                    transform: none;
+                }
         }
 
         .card {
@@ -366,6 +453,10 @@
             height: 100%;
             backface-visibility: hidden;
             padding: 1.5rem;
+
+            @media only screen and (max-width: $bp-medium) {
+                padding: 5rem;
+            }
         }
     }
 

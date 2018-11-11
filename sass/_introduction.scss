@@ -16,15 +16,15 @@
         margin-top: 1rem;
         border-radius: 2rem;
 
-        @media only screen and (max-width: $bp-small) {
-            columns: 2 12rem;
-        }
-
-        @media only screen and (max-width: $bp-vsmall) {
+        @media only screen and (max-width: $bp-medium) {
             columns: 1;
+            padding: 2rem 5rem;
+
         }
 
-
+        // @media only screen and (max-width: $bp-small) {
+        //     columns: 1;
+        // }
 
         p {
             margin-bottom: 1.3rem;
