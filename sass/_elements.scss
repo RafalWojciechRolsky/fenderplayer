@@ -6,57 +6,53 @@
     grid-template-columns: repeat(6, 1fr);
 
     @media only screen and (max-width: $bp-medium) {
+
         grid-template-columns: 1fr;
         grid-gap: 0rem;
         grid-template-rows: auto
                         repeat(1, 38rem) //Przetworniki
                         repeat(1, 32rem) //22 Progi Medium Jumbo
-                        repeat(1, 123rem) //Konfiguracja Pickupów
-                        repeat(1, 116rem) //Regulacja Tone / Elektronika
+                        repeat(1, 115rem) //Konfiguracja Pickupów
+                        repeat(1, 109rem) //Regulacja Tone / Elektronika
                         repeat(1, 32rem) //Korpus
-                        repeat(1, 32rem) //Gryf
-                        repeat(1, 125rem) //Mostek
-                        repeat(1, 106rem) //Podstrunnica
-                        repeat(1, 104rem) //Kolory
-                        repeat(1, 90rem) //F Logo
-                        repeat(1, 33rem) //Nowe Logo
+                        repeat(1, 28rem) //Gryf
+                        repeat(1, 118rem) //Mostek
+                        repeat(1, 102rem) //Podstrunnica
+                        repeat(1, 98rem) //Kolory
+                        repeat(1, 88rem) //F Logo
+                        repeat(1, 31rem) //Nowe Logo
                         repeat(1, 35rem); //Główka Na Połysk
+    }
+
+    @media only screen and (max-width: $bp-small) {
+
+        grid-template-columns: 1fr;
+        grid-gap: 0rem;
+        grid-template-rows: auto
+                        repeat(1, 42rem) //Przetworniki
+                        repeat(1, 38rem) //22 Progi Medium Jumbo
+                        repeat(1, 124rem) //Konfiguracja Pickupów
+                        repeat(1, 124rem) //Regulacja Tone / Elektronika
+                        repeat(1, 34rem) //Korpus
+                        repeat(1, 34rem) //Gryf
+                        repeat(1, 120rem) //Mostek
+                        repeat(1, 108rem) //Podstrunnica
+                        repeat(1, 128rem) //Kolory
+                        repeat(1, 90rem) //F Logo
+                        repeat(1, 34rem) //Nowe Logo
+                        repeat(1, 38rem); //Główka Na Połysk
     }
 
 
     grid-template-rows: auto
-                    repeat(1, 36rem)
-                    repeat(1, 82rem)
-                    repeat(1, 80rem)
-                    repeat(1, 82rem)
-                    repeat(1, 76rem)
-                    repeat(1, 71rem)
-                    repeat(1, 52rem)
-                    repeat(1, 31rem);
-
-    @media only screen and (max-width: $bp-vsmall) {
-        grid-template-rows: auto
-                        repeat(1, 36rem)
-                        repeat(1, 82rem)
-                        repeat(1, 84rem)
-                        repeat(1, 82rem)
-                        repeat(1, 76rem)
-                        repeat(1, 71rem)
-                        repeat(1, 52rem)
-                        repeat(1, 31rem);
-    }
-
-    @media only screen and (max-width: $bp-vvsmall) {
-        grid-template-rows: auto
-                        repeat(1, 40rem)
-                        repeat(1, 82rem)
-                        repeat(1, 83rem)
-                        repeat(1, 87rem)
-                        repeat(1, 78rem)
-                        repeat(1, 73rem)
-                        repeat(1, 58rem)
-                        repeat(1, 31rem);
-    }
+                    repeat(1, 36rem)// Przetworniki, 22 Progi Medium Jumbo, korpus
+                    repeat(1, 88rem)// Konfiguracja Pickupów
+                    repeat(1, 86rem)// Regulacja Tone / Elektronika
+                    repeat(1, 90rem)// Mostek
+                    repeat(1, 86rem)// Podstrunnica
+                    repeat(1, 81rem)// F Logo
+                    repeat(1, 52rem)// Kolory
+                    repeat(1, 31rem);// Nowe Logo, Gryf, Główka na połysk
 
     & > * {
         border-radius: 2rem;
@@ -79,27 +75,85 @@
         .nie-card__front {
             align-self: center;
             margin-top: 2rem;
-            width: 90rem;
-            height: 50rem;
+            width: 100rem;
+            height: 57rem;
+
+            @media only screen and (max-width: $bp-larg) {
+                width: 95rem;
+                height: 55rem;
+            }
 
             @media only screen and (max-width: $bp-medium) {
-                width: 90rem;
-                height: 50rem;
+                width: 85rem;
+                height: 45.6rem;
             }
 
-            @media only screen and (max-width: $bp-small) {
-                width: 65rem;
-                height: 45rem;
+            @media only screen and (max-width: $bp-700) {
+                width: 75rem;
+                height: 42.2rem;
             }
 
-            @media only screen and (max-width: $bp-vsmall) {
+            @media only screen and (max-width: $bp-600) {
+                width: 70rem;
+                height: 42.2rem;
+            }
+
+            @media only screen and (max-width: $bp-560) {
+                width: 69rem;
+                height: 42.2rem;
+            }
+
+            @media only screen and (max-width: $bp-530) {
+                width: 66rem;
+                height: 42.2rem;
+            }
+
+            @media only screen and (max-width: $bp-500) {
                 width: 60rem;
-                height: 45rem;
+                height: 42.2rem;
             }
 
-            @media only screen and (max-width: $bp-vvsmall) {
-                width: 60rem;
-                height: 48rem;
+            @media only screen and (max-width: $bp-480) {
+                width: 57rem;
+                height: 42.2rem;
+            }
+
+            @media only screen and (max-width: $bp-460) {
+                width: rem;
+                height: 54rem;
+            }
+
+            @media only screen and (max-width: $bp-440) {
+                width: 51rem;
+                height: 42.2rem;
+            }
+
+            @media only screen and (max-width: $bp-420) {
+                width: 48rem;
+                height: 42.2rem;
+            }
+
+            @media only screen and (max-width: $bp-400) {
+                width: 45rem;
+            }
+
+            @media only screen and (max-width: $bp-380) {
+                width: 42rem;
+                height: 42.2rem;
+            }
+
+            @media only screen and (max-width: $bp-360) {
+                width: 39rem;
+                height: 42.2rem;
+            }
+
+            @media only screen and (max-width: $bp-340) {
+                width: 36rem;
+                height: 42.2rem;
+            }
+
+            @media only screen and (max-width: $bp-320) {
+                width: 33rem;
             }
         }
     }
@@ -163,6 +217,7 @@
         grid-column: 5 / 7;
         grid-row: 9 / 10;
     }
+
 
     @media only screen and (max-width: $bp-medium) {
 
@@ -277,6 +332,7 @@
         }
 
         .obraz1 {
+
             background-color: var(--col2);
             box-shadow: 0 .2rem .2rem rgba(0,0,0,.3);
             background-image: url(../img/fcwd-1.jpg);
@@ -287,7 +343,6 @@
 
             &:hover {
                 background-color: transparent;
-
             }
         }
 
@@ -302,7 +357,6 @@
 
             &:hover {
                 background-color: transparent;
-
             }
         }
 
@@ -468,6 +522,12 @@
     .kolory {
         display: grid;
         grid-template-columns: repeat(7, min-content);
+
+        @media only screen and (max-width: $bp-small) {
+            grid-template-columns: repeat(4, min-content);
+            grid-template-rows: repeat(2, min-content);
+        }
+
         justify-content: space-around;
         align-self: center;
         height: 10rem;
@@ -480,32 +540,16 @@
                 display: block;
                 // padding: 1rem;
                 margin: 2rem 1rem;
-                width: 11rem;
-                height: 11rem;
+                width: 10rem;
+                height: 10rem;
                 border-radius: 50%;
                 background-image: url(../img/kolor-3ts.jpg);
                 box-shadow: 0 .2rem .2rem rgba(0,0,0,.3);
 
-                @media only screen and (max-width: $bp-medium) {
-                    width: 9rem;
-                    height: 9rem;
-                }
-
                 @media only screen and (max-width: $bp-small) {
-                    width: 8rem;
-                    height: 8rem;
+                    width: 11rem;
+                    height: 11rem;
                 }
-
-                @media only screen and (max-width: $bp-vsmall) {
-                    width: 7rem;
-                    height: 7rem;
-                }
-
-                // @media only screen and (max-width: $bp-vvsmall) {
-                //     width: 6rem;
-                //     height: 6rem;
-                // }
-
             }
 
             &--bk::before {
@@ -513,31 +557,16 @@
                 display: block;
                 // padding: 1rem;
                 margin: 2rem 1rem;
-                width: 11rem;
-                height: 11rem;
+                width: 10rem;
+                height: 10rem;
                 border-radius: 50%;
                 background-image: url(../img/kolor-bk.jpg);
                 box-shadow: 0 .2rem .2rem rgba(0,0,0,.3);
 
-                @media only screen and (max-width: $bp-medium) {
-                    width: 9rem;
-                    height: 9rem;
-                }
-
                 @media only screen and (max-width: $bp-small) {
-                    width: 8rem;
-                    height: 8rem;
+                    width: 11rem;
+                    height: 11rem;
                 }
-
-                @media only screen and (max-width: $bp-vsmall) {
-                    width: 7rem;
-                    height: 7rem;
-                }
-
-                // @media only screen and (max-width: $bp-vvsmall) {
-                //     width: 6rem;
-                //     height: 6rem;
-                // }
             }
 
             &--bcr::before {
@@ -545,31 +574,16 @@
                 display: block;
                 // padding: 1rem;
                 margin: 2rem 1rem;
-                width: 11rem;
-                height: 11rem;
+                width: 10rem;
+                height: 10rem;
                 border-radius: 50%;
                 background-image: url(../img/kolor-bcr.jpg);
                 box-shadow: 0 .2rem .2rem rgba(0,0,0,.3);
 
-                @media only screen and (max-width: $bp-medium) {
-                    width: 9rem;
-                    height: 9rem;
-                }
-
                 @media only screen and (max-width: $bp-small) {
-                    width: 8rem;
-                    height: 8rem;
+                    width: 11rem;
+                    height: 11rem;
                 }
-
-                @media only screen and (max-width: $bp-vsmall) {
-                    width: 7rem;
-                    height: 7rem;
-                }
-
-                // @media only screen and (max-width: $bp-vvsmall) {
-                //     width: 6rem;
-                //     height: 6rem;
-                // }
             }
 
             &--pw::before {
@@ -577,31 +591,16 @@
                 display: block;
                 // padding: 1rem;
                 margin: 2rem 1rem;
-                width: 11rem;
-                height: 11rem;
+                width: 10rem;
+                height: 10rem;
                 border-radius: 50%;
                 background-image: url(../img/kolor-pw.jpg);
                 box-shadow: 0 .2rem .2rem rgba(0,0,0,.3);
 
-                @media only screen and (max-width: $bp-medium) {
-                    width: 9rem;
-                    height: 9rem;
-                }
-
                 @media only screen and (max-width: $bp-small) {
-                    width: 8rem;
-                    height: 8rem;
+                    width: 11rem;
+                    height: 11rem;
                 }
-
-                @media only screen and (max-width: $bp-vsmall) {
-                    width: 7rem;
-                    height: 7rem;
-                }
-
-                // @media only screen and (max-width: $bp-vvsmall) {
-                //     width: 6rem;
-                //     height: 6rem;
-                // }
             }
 
             &--sgn::before {
@@ -609,31 +608,16 @@
                 display: block;
                 // padding: 1rem;
                 margin: 2rem 1rem;
-                width: 11rem;
-                height: 11rem;
+                width: 10rem;
+                height: 10rem;
                 border-radius: 50%;
                 background-image: url(../img/kolor-sgn.jpg);
                 box-shadow: 0 .2rem .2rem rgba(0,0,0,.3);
 
-                @media only screen and (max-width: $bp-medium) {
-                    width: 9rem;
-                    height: 9rem;
-                }
-
                 @media only screen and (max-width: $bp-small) {
-                    width: 8rem;
-                    height: 8rem;
+                    width: 11rem;
+                    height: 11rem;
                 }
-
-                @media only screen and (max-width: $bp-vsmall) {
-                    width: 7rem;
-                    height: 7rem;
-                }
-
-                // @media only screen and (max-width: $bp-vvsmall) {
-                //     width: 6rem;
-                //     height: 6rem;
-                // }
             }
 
             &--snr::before {
@@ -641,31 +625,16 @@
                 display: block;
                 // padding: 1rem;
                 margin: 2rem 1rem;
-                width: 11rem;
-                height: 11rem;
+                width: 10rem;
+                height: 10rem;
                 border-radius: 50%;
                 background-image: url(../img/kolor-snr.jpg);
                 box-shadow: 0 .2rem .2rem rgba(0,0,0,.3);
 
-                @media only screen and (max-width: $bp-medium) {
-                    width: 9rem;
-                    height: 9rem;
-                }
-
                 @media only screen and (max-width: $bp-small) {
-                    width: 8rem;
-                    height: 8rem;
+                    width: 11rem;
+                    height: 11rem;
                 }
-
-                @media only screen and (max-width: $bp-vsmall) {
-                    width: 7rem;
-                    height: 7rem;
-                }
-
-                // @media only screen and (max-width: $bp-vvsmall) {
-                //     width: 6rem;
-                //     height: 6rem;
-                // }
             }
 
             &--tpl::before {
@@ -673,31 +642,16 @@
                 display: block;
                 // padding: 1rem;
                 margin: 2rem 1rem;
-                width: 11rem;
-                height: 11rem;
+                width: 10rem;
+                height: 10rem;
                 border-radius: 50%;
                 background-image: url(../img/kolor-tpl.jpg);
                 box-shadow: 0 .2rem .2rem rgba(0,0,0,.3);
 
-                @media only screen and (max-width: $bp-medium) {
-                    width: 9rem;
-                    height: 9rem;
-                }
-
                 @media only screen and (max-width: $bp-small) {
-                    width: 8rem;
-                    height: 8rem;
+                    width: 11rem;
+                    height: 11rem;
                 }
-
-                @media only screen and (max-width: $bp-vsmall) {
-                    width: 7rem;
-                    height: 7rem;
-                }
-
-                // @media only screen and (max-width: $bp-vvsmall) {
-                //     width: 6rem;
-                //     height: 6rem;
-                // }
             }
         }
     }

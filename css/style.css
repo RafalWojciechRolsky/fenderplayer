@@ -34,15 +34,9 @@ html {
   @media only screen and (max-width: 56.25em) {
     html {
       font-size: 45%; } }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 41.25em) {
     html {
       font-size: 40%; } }
-  @media only screen and (max-width: 31.5em) {
-    html {
-      font-size: 38%; } }
-  @media only screen and (max-width: 25.5em) {
-    html {
-      font-size: 35%; } }
 
 body {
   font-family: 'Dosis';
@@ -52,11 +46,13 @@ body {
   background-color: var(--Maple); }
   @media only screen and (max-width: 56.25em) {
     body {
-      font-size: 3.5rem; } }
+      font-size: 3rem; } }
 
 .conclusion {
   display: grid;
   grid-template-columns: 1fr 1fr; }
+  .conclusion__sum {
+    margin-bottom: 5rem; }
   @media only screen and (max-width: 56.25em) {
     .conclusion {
       grid-template-columns: 1fr;
@@ -66,7 +62,7 @@ body {
     text-align: justify; }
     @media only screen and (max-width: 56.25em) {
       .conclusion p {
-        padding: 5rem; } }
+        padding: 5rem 5rem 0 5rem; } }
   .conclusion .form-kontakt {
     align-self: center;
     width: 100%;
@@ -144,18 +140,17 @@ body {
   display: grid;
   grid-gap: 3rem;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: auto repeat(1, 36rem) repeat(1, 82rem) repeat(1, 80rem) repeat(1, 82rem) repeat(1, 76rem) repeat(1, 71rem) repeat(1, 52rem) repeat(1, 31rem); }
+  grid-template-rows: auto repeat(1, 36rem) repeat(1, 88rem) repeat(1, 86rem) repeat(1, 90rem) repeat(1, 86rem) repeat(1, 81rem) repeat(1, 52rem) repeat(1, 31rem); }
   @media only screen and (max-width: 56.25em) {
     .elements {
       grid-template-columns: 1fr;
       grid-gap: 0rem;
-      grid-template-rows: auto repeat(1, 38rem) repeat(1, 32rem) repeat(1, 123rem) repeat(1, 116rem) repeat(1, 32rem) repeat(1, 32rem) repeat(1, 125rem) repeat(1, 106rem) repeat(1, 104rem) repeat(1, 90rem) repeat(1, 33rem) repeat(1, 35rem); } }
-  @media only screen and (max-width: 31.5em) {
+      grid-template-rows: auto repeat(1, 38rem) repeat(1, 32rem) repeat(1, 115rem) repeat(1, 109rem) repeat(1, 32rem) repeat(1, 28rem) repeat(1, 118rem) repeat(1, 102rem) repeat(1, 98rem) repeat(1, 88rem) repeat(1, 31rem) repeat(1, 35rem); } }
+  @media only screen and (max-width: 41.25em) {
     .elements {
-      grid-template-rows: auto repeat(1, 36rem) repeat(1, 82rem) repeat(1, 84rem) repeat(1, 82rem) repeat(1, 76rem) repeat(1, 71rem) repeat(1, 52rem) repeat(1, 31rem); } }
-  @media only screen and (max-width: 25.5em) {
-    .elements {
-      grid-template-rows: auto repeat(1, 40rem) repeat(1, 82rem) repeat(1, 83rem) repeat(1, 87rem) repeat(1, 78rem) repeat(1, 73rem) repeat(1, 58rem) repeat(1, 31rem); } }
+      grid-template-columns: 1fr;
+      grid-gap: 0rem;
+      grid-template-rows: auto repeat(1, 42rem) repeat(1, 38rem) repeat(1, 124rem) repeat(1, 124rem) repeat(1, 34rem) repeat(1, 34rem) repeat(1, 120rem) repeat(1, 108rem) repeat(1, 128rem) repeat(1, 90rem) repeat(1, 34rem) repeat(1, 38rem); } }
   .elements > * {
     border-radius: 2rem; }
   .elements .nie-card {
@@ -170,24 +165,70 @@ body {
     .elements .nie-card .nie-card__front {
       align-self: center;
       margin-top: 2rem;
-      width: 90rem;
-      height: 50rem; }
+      width: 100rem;
+      height: 57rem; }
+      @media only screen and (max-width: 68.75em) {
+        .elements .nie-card .nie-card__front {
+          width: 95rem;
+          height: 55rem; } }
       @media only screen and (max-width: 56.25em) {
         .elements .nie-card .nie-card__front {
-          width: 90rem;
-          height: 50rem; } }
+          width: 85rem;
+          height: 45.6rem; } }
+      @media only screen and (max-width: 43.75em) {
+        .elements .nie-card .nie-card__front {
+          width: 75rem;
+          height: 42.2rem; } }
       @media only screen and (max-width: 37.5em) {
         .elements .nie-card .nie-card__front {
-          width: 65rem;
-          height: 45rem; } }
-      @media only screen and (max-width: 31.5em) {
+          width: 70rem;
+          height: 42.2rem; } }
+      @media only screen and (max-width: 35em) {
+        .elements .nie-card .nie-card__front {
+          width: 69rem;
+          height: 42.2rem; } }
+      @media only screen and (max-width: 33.125em) {
+        .elements .nie-card .nie-card__front {
+          width: 66rem;
+          height: 42.2rem; } }
+      @media only screen and (max-width: 31.25em) {
         .elements .nie-card .nie-card__front {
           width: 60rem;
-          height: 45rem; } }
-      @media only screen and (max-width: 25.5em) {
+          height: 42.2rem; } }
+      @media only screen and (max-width: 30em) {
         .elements .nie-card .nie-card__front {
-          width: 60rem;
-          height: 48rem; } }
+          width: 57rem;
+          height: 42.2rem; } }
+      @media only screen and (max-width: 28.75em) {
+        .elements .nie-card .nie-card__front {
+          width: rem;
+          height: 54rem; } }
+      @media only screen and (max-width: 27.5em) {
+        .elements .nie-card .nie-card__front {
+          width: 51rem;
+          height: 42.2rem; } }
+      @media only screen and (max-width: 26.25em) {
+        .elements .nie-card .nie-card__front {
+          width: 48rem;
+          height: 42.2rem; } }
+      @media only screen and (max-width: 25em) {
+        .elements .nie-card .nie-card__front {
+          width: 45rem; } }
+      @media only screen and (max-width: 23.75em) {
+        .elements .nie-card .nie-card__front {
+          width: 42rem;
+          height: 42.2rem; } }
+      @media only screen and (max-width: 22.5em) {
+        .elements .nie-card .nie-card__front {
+          width: 39rem;
+          height: 42.2rem; } }
+      @media only screen and (max-width: 21.25em) {
+        .elements .nie-card .nie-card__front {
+          width: 36rem;
+          height: 42.2rem; } }
+      @media only screen and (max-width: 20em) {
+        .elements .nie-card .nie-card__front {
+          width: 33rem; } }
   .elements__przetworniki {
     grid-column: 1 / 3;
     grid-row: 2 / 3; }
@@ -424,155 +465,103 @@ body {
     justify-content: space-around;
     align-self: center;
     height: 10rem; }
+    @media only screen and (max-width: 41.25em) {
+      .elements .kolory {
+        grid-template-columns: repeat(4, min-content);
+        grid-template-rows: repeat(2, min-content); } }
     .elements .kolory__gitar {
       text-align: center; }
       .elements .kolory__gitar--3ts::before {
         content: '';
         display: block;
         margin: 2rem 1rem;
-        width: 11rem;
-        height: 11rem;
+        width: 10rem;
+        height: 10rem;
         border-radius: 50%;
         background-image: url(../img/kolor-3ts.jpg);
         box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.3); }
-        @media only screen and (max-width: 56.25em) {
+        @media only screen and (max-width: 41.25em) {
           .elements .kolory__gitar--3ts::before {
-            width: 9rem;
-            height: 9rem; } }
-        @media only screen and (max-width: 37.5em) {
-          .elements .kolory__gitar--3ts::before {
-            width: 8rem;
-            height: 8rem; } }
-        @media only screen and (max-width: 31.5em) {
-          .elements .kolory__gitar--3ts::before {
-            width: 7rem;
-            height: 7rem; } }
+            width: 11rem;
+            height: 11rem; } }
       .elements .kolory__gitar--bk::before {
         content: '';
         display: block;
         margin: 2rem 1rem;
-        width: 11rem;
-        height: 11rem;
+        width: 10rem;
+        height: 10rem;
         border-radius: 50%;
         background-image: url(../img/kolor-bk.jpg);
         box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.3); }
-        @media only screen and (max-width: 56.25em) {
+        @media only screen and (max-width: 41.25em) {
           .elements .kolory__gitar--bk::before {
-            width: 9rem;
-            height: 9rem; } }
-        @media only screen and (max-width: 37.5em) {
-          .elements .kolory__gitar--bk::before {
-            width: 8rem;
-            height: 8rem; } }
-        @media only screen and (max-width: 31.5em) {
-          .elements .kolory__gitar--bk::before {
-            width: 7rem;
-            height: 7rem; } }
+            width: 11rem;
+            height: 11rem; } }
       .elements .kolory__gitar--bcr::before {
         content: '';
         display: block;
         margin: 2rem 1rem;
-        width: 11rem;
-        height: 11rem;
+        width: 10rem;
+        height: 10rem;
         border-radius: 50%;
         background-image: url(../img/kolor-bcr.jpg);
         box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.3); }
-        @media only screen and (max-width: 56.25em) {
+        @media only screen and (max-width: 41.25em) {
           .elements .kolory__gitar--bcr::before {
-            width: 9rem;
-            height: 9rem; } }
-        @media only screen and (max-width: 37.5em) {
-          .elements .kolory__gitar--bcr::before {
-            width: 8rem;
-            height: 8rem; } }
-        @media only screen and (max-width: 31.5em) {
-          .elements .kolory__gitar--bcr::before {
-            width: 7rem;
-            height: 7rem; } }
+            width: 11rem;
+            height: 11rem; } }
       .elements .kolory__gitar--pw::before {
         content: '';
         display: block;
         margin: 2rem 1rem;
-        width: 11rem;
-        height: 11rem;
+        width: 10rem;
+        height: 10rem;
         border-radius: 50%;
         background-image: url(../img/kolor-pw.jpg);
         box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.3); }
-        @media only screen and (max-width: 56.25em) {
+        @media only screen and (max-width: 41.25em) {
           .elements .kolory__gitar--pw::before {
-            width: 9rem;
-            height: 9rem; } }
-        @media only screen and (max-width: 37.5em) {
-          .elements .kolory__gitar--pw::before {
-            width: 8rem;
-            height: 8rem; } }
-        @media only screen and (max-width: 31.5em) {
-          .elements .kolory__gitar--pw::before {
-            width: 7rem;
-            height: 7rem; } }
+            width: 11rem;
+            height: 11rem; } }
       .elements .kolory__gitar--sgn::before {
         content: '';
         display: block;
         margin: 2rem 1rem;
-        width: 11rem;
-        height: 11rem;
+        width: 10rem;
+        height: 10rem;
         border-radius: 50%;
         background-image: url(../img/kolor-sgn.jpg);
         box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.3); }
-        @media only screen and (max-width: 56.25em) {
+        @media only screen and (max-width: 41.25em) {
           .elements .kolory__gitar--sgn::before {
-            width: 9rem;
-            height: 9rem; } }
-        @media only screen and (max-width: 37.5em) {
-          .elements .kolory__gitar--sgn::before {
-            width: 8rem;
-            height: 8rem; } }
-        @media only screen and (max-width: 31.5em) {
-          .elements .kolory__gitar--sgn::before {
-            width: 7rem;
-            height: 7rem; } }
+            width: 11rem;
+            height: 11rem; } }
       .elements .kolory__gitar--snr::before {
         content: '';
         display: block;
         margin: 2rem 1rem;
-        width: 11rem;
-        height: 11rem;
+        width: 10rem;
+        height: 10rem;
         border-radius: 50%;
         background-image: url(../img/kolor-snr.jpg);
         box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.3); }
-        @media only screen and (max-width: 56.25em) {
+        @media only screen and (max-width: 41.25em) {
           .elements .kolory__gitar--snr::before {
-            width: 9rem;
-            height: 9rem; } }
-        @media only screen and (max-width: 37.5em) {
-          .elements .kolory__gitar--snr::before {
-            width: 8rem;
-            height: 8rem; } }
-        @media only screen and (max-width: 31.5em) {
-          .elements .kolory__gitar--snr::before {
-            width: 7rem;
-            height: 7rem; } }
+            width: 11rem;
+            height: 11rem; } }
       .elements .kolory__gitar--tpl::before {
         content: '';
         display: block;
         margin: 2rem 1rem;
-        width: 11rem;
-        height: 11rem;
+        width: 10rem;
+        height: 10rem;
         border-radius: 50%;
         background-image: url(../img/kolor-tpl.jpg);
         box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.3); }
-        @media only screen and (max-width: 56.25em) {
+        @media only screen and (max-width: 41.25em) {
           .elements .kolory__gitar--tpl::before {
-            width: 9rem;
-            height: 9rem; } }
-        @media only screen and (max-width: 37.5em) {
-          .elements .kolory__gitar--tpl::before {
-            width: 8rem;
-            height: 8rem; } }
-        @media only screen and (max-width: 31.5em) {
-          .elements .kolory__gitar--tpl::before {
-            width: 7rem;
-            height: 7rem; } }
+            width: 11rem;
+            height: 11rem; } }
 
 .footer {
   border-top: 1px solid var(--col1);
@@ -709,7 +698,8 @@ body {
   grid-template-columns: 1fr; }
   @media only screen and (max-width: 56.25em) {
     .container {
-      margin-top: 0rem; } }
+      margin-top: 0rem;
+      width: 100%; } }
   .container > * {
     padding: 2rem 3rem; }
     @media only screen and (max-width: 56.25em) {
@@ -801,16 +791,13 @@ body {
   font-family: Lobster; }
   @media only screen and (max-width: 68.75em) {
     .heading-1 {
-      font-size: 8rem; } }
+      font-size: 10rem; } }
   @media only screen and (max-width: 56.25em) {
     .heading-1 {
       font-size: 7rem; } }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 41.25em) {
     .heading-1 {
-      font-size: 7rem; } }
-  @media only screen and (max-width: 31.5em) {
-    .heading-1 {
-      font-size: 7rem; } }
+      font-size: 6rem; } }
 
 .heading-2 {
   color: var(--col1);
