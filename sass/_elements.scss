@@ -10,47 +10,353 @@
         grid-template-columns: 1fr;
         grid-gap: 0rem;
         grid-template-rows: auto
-                        repeat(1, 38rem) //Przetworniki
+                        repeat(1, 34rem) //Przetworniki
                         repeat(1, 32rem) //22 Progi Medium Jumbo
-                        repeat(1, 115rem) //Konfiguracja Pickupów
-                        repeat(1, 109rem) //Regulacja Tone / Elektronika
+                        repeat(1, 110rem) //Konfiguracja Pickupów
+                        repeat(1, 111rem) //Regulacja Tone / Elektronika
                         repeat(1, 32rem) //Korpus
                         repeat(1, 28rem) //Gryf
                         repeat(1, 118rem) //Mostek
                         repeat(1, 102rem) //Podstrunnica
-                        repeat(1, 98rem) //Kolory
-                        repeat(1, 88rem) //F Logo
+                        repeat(1, 93rem) //Kolory
+                        repeat(1, 84rem) //F Logo
                         repeat(1, 31rem) //Nowe Logo
                         repeat(1, 35rem); //Główka Na Połysk
     }
 
-    @media only screen and (max-width: $bp-small) {
+
+
+    @media only screen and (max-width: $bp-800) {
 
         grid-template-columns: 1fr;
         grid-gap: 0rem;
         grid-template-rows: auto
                         repeat(1, 42rem) //Przetworniki
                         repeat(1, 38rem) //22 Progi Medium Jumbo
-                        repeat(1, 124rem) //Konfiguracja Pickupów
-                        repeat(1, 124rem) //Regulacja Tone / Elektronika
+                        repeat(1, 118rem) //Konfiguracja Pickupów
+                        repeat(1, 114rem) //Regulacja Tone / Elektronika
                         repeat(1, 34rem) //Korpus
                         repeat(1, 34rem) //Gryf
                         repeat(1, 120rem) //Mostek
                         repeat(1, 108rem) //Podstrunnica
-                        repeat(1, 128rem) //Kolory
-                        repeat(1, 90rem) //F Logo
+                        repeat(1, 96rem) //Kolory
+                        repeat(1, 86rem) //F Logo
                         repeat(1, 34rem) //Nowe Logo
                         repeat(1, 38rem); //Główka Na Połysk
     }
 
 
+    @media only screen and (max-width: $bp-700) {
+
+        grid-template-columns: 1fr;
+        grid-gap: 0rem;
+        grid-template-rows: auto
+                        repeat(1, 42rem) //Przetworniki
+                        repeat(1, 38rem) //22 Progi Medium Jumbo
+                        repeat(1, 118rem) //Konfiguracja Pickupów
+                        repeat(1, 114rem) //Regulacja Tone / Elektronika
+                        repeat(1, 34rem) //Korpus
+                        repeat(1, 34rem) //Gryf
+                        repeat(1, 123rem) //Mostek
+                        repeat(1, 108rem) //Podstrunnica
+                        repeat(1,98rem) //Kolory
+                        repeat(1, 84rem) //F Logo
+                        repeat(1, 34rem) //Nowe Logo
+                        repeat(1, 38rem); //Główka Na Połysk
+    }
+
+    @media only screen and (max-width: $bp-small) { //660px
+
+        grid-template-columns: 1fr;
+        grid-gap: 0rem;
+        grid-template-rows: auto
+                        repeat(1, 42rem) //Przetworniki
+                        repeat(1, 38rem) //22 Progi Medium Jumbo
+                        repeat(1, 116rem) //Konfiguracja Pickupów
+                        repeat(1, 114rem) //Regulacja Tone / Elektronika
+                        repeat(1, 34rem) //Korpus
+                        repeat(1, 34rem) //Gryf
+                        repeat(1, 116rem) //Mostek
+                        repeat(1, 104rem) //Podstrunnica
+                        repeat(1, 118rem) //Kolory
+                        repeat(1, 86rem) //F Logo
+                        repeat(1, 34rem) //Nowe Logo
+                        repeat(1, 38rem); //Główka Na Połysk
+    }
+
+    @media only screen and (max-width: $bp-600) {
+
+        grid-template-columns: 1fr;
+        grid-gap: 0rem;
+        grid-template-rows: auto
+                        repeat(1, 42rem) //Przetworniki
+                        repeat(1, 38rem) //22 Progi Medium Jumbo
+                        repeat(1, 114rem) //Konfiguracja Pickupów
+                        repeat(1, 114rem) //Regulacja Tone / Elektronika
+                        repeat(1, 34rem) //Korpus
+                        repeat(1, 34rem) //Gryf
+                        repeat(1, 110rem) //Mostek
+                        repeat(1, 100rem) //Podstrunnica
+                        repeat(1, 124rem) //Kolory
+                        repeat(1, 80rem) //F Logo
+                        repeat(1, 34rem) //Nowe Logo
+                        repeat(1, 38rem); //Główka Na Połysk
+    }
+
+    @media only screen and (max-width: $bp-560) {
+
+        grid-template-columns: 1fr;
+        grid-gap: 0rem;
+        grid-template-rows: auto
+                        repeat(1, 42rem) //Przetworniki
+                        repeat(1, 38rem) //22 Progi Medium Jumbo
+                        repeat(1, 114rem) //Konfiguracja Pickupów
+                        repeat(1, 114rem) //Regulacja Tone / Elektronika
+                        repeat(1, 34rem) //Korpus
+                        repeat(1, 34rem) //Gryf
+                        repeat(1, 120rem) //Mostek
+                        repeat(1, 108rem) //Podstrunnica
+                        repeat(1, 124rem) //Kolory
+                        repeat(1, 80rem) //F Logo
+                        repeat(1, 34rem) //Nowe Logo
+                        repeat(1, 38rem); //Główka Na Połysk
+    }
+
+    @media only screen and (max-width: $bp-530) {
+
+        grid-template-columns: 1fr;
+        grid-gap: 0rem;
+        grid-template-rows: auto
+                        repeat(1, 42rem) //Przetworniki
+                        repeat(1, 38rem) //22 Progi Medium Jumbo
+                        repeat(1, 122rem) //Konfiguracja Pickupów
+                        repeat(1, 120rem) //Regulacja Tone / Elektronika
+                        repeat(1, 34rem) //Korpus
+                        repeat(1, 34rem) //Gryf
+                        repeat(1, 120rem) //Mostek
+                        repeat(1, 108rem) //Podstrunnica
+                        repeat(1, 124rem) //Kolory
+                        repeat(1, 80rem) //F Logo
+                        repeat(1, 34rem) //Nowe Logo
+                        repeat(1, 38rem); //Główka Na Połysk
+    }
+
+    @media only screen and (max-width: $bp-500) {
+
+        grid-template-columns: 1fr;
+        grid-gap: 0rem;
+        grid-template-rows: auto
+                        repeat(1, 42rem) //Przetworniki
+                        repeat(1, 38rem) //22 Progi Medium Jumbo
+                        repeat(1, 126rem) //Konfiguracja Pickupów
+                        repeat(1, 124rem) //Regulacja Tone / Elektronika
+                        repeat(1, 34rem) //Korpus
+                        repeat(1, 34rem) //Gryf
+                        repeat(1, 126rem) //Mostek
+                        repeat(1, 108rem) //Podstrunnica
+                        repeat(1, 130rem) //Kolory
+                        repeat(1, 86rem) //F Logo
+                        repeat(1, 34rem) //Nowe Logo
+                        repeat(1, 38rem); //Główka Na Połysk
+    }
+
+    @media only screen and (max-width: $bp-480) {
+
+        grid-template-columns: 1fr;
+        grid-gap: 0rem;
+        grid-template-rows: auto
+                        repeat(1, 48rem) //Przetworniki
+                        repeat(1, 40rem) //22 Progi Medium Jumbo
+                        repeat(1, 130rem) //Konfiguracja Pickupów
+                        repeat(1, 128rem) //Regulacja Tone / Elektronika
+                        repeat(1, 40rem) //Korpus
+                        repeat(1, 36rem) //Gryf
+                        repeat(1, 128rem) //Mostek
+                        repeat(1, 112rem) //Podstrunnica
+                        repeat(1, 140rem) //Kolory
+                        repeat(1, 84rem) //F Logo
+                        repeat(1, 42rem) //Nowe Logo
+                        repeat(1, 42rem); //Główka Na Połysk
+    }
+
+    @media only screen and (max-width: $bp-460) {
+
+        grid-template-columns: 1fr;
+        grid-gap: 0rem;
+        grid-template-rows: auto
+                        repeat(1, 48rem) //Przetworniki
+                        repeat(1, 40rem) //22 Progi Medium Jumbo
+                        repeat(1, 142rem) //Konfiguracja Pickupów
+                        repeat(1, 142rem) //Regulacja Tone / Elektronika
+                        repeat(1, 40rem) //Korpus
+                        repeat(1, 36rem) //Gryf
+                        repeat(1, 142rem) //Mostek
+                        repeat(1, 124rem) //Podstrunnica
+                        repeat(1, 138rem) //Kolory
+                        repeat(1, 96rem) //F Logo
+                        repeat(1, 42rem) //Nowe Logo
+                        repeat(1, 42rem); //Główka Na Połysk
+    }
+
+    @media only screen and (max-width: $bp-440) {
+
+        grid-template-columns: 1fr;
+        grid-gap: 0rem;
+        grid-template-rows: auto
+                        repeat(1, 48rem) //Przetworniki
+                        repeat(1, 40rem) //22 Progi Medium Jumbo
+                        repeat(1, 132rem) //Konfiguracja Pickupów
+                        repeat(1, 142rem) //Regulacja Tone / Elektronika
+                        repeat(1, 40rem) //Korpus
+                        repeat(1, 40rem) //Gryf
+                        repeat(1, 134rem) //Mostek
+                        repeat(1, 120rem) //Podstrunnica
+                        repeat(1, 142rem) //Kolory
+                        repeat(1, 88rem) //F Logo
+                        repeat(1, 42rem) //Nowe Logo
+                        repeat(1, 42rem); //Główka Na Połysk
+    }
+
+    @media only screen and (max-width: $bp-420) {
+
+        grid-template-columns: 1fr;
+        grid-gap: 0rem;
+        grid-template-rows: auto
+                        repeat(1, 52rem) //Przetworniki
+                        repeat(1, 48rem) //22 Progi Medium Jumbo
+                        repeat(1, 140rem) //Konfiguracja Pickupów
+                        repeat(1, 142rem) //Regulacja Tone / Elektronika
+                        repeat(1, 44rem) //Korpus
+                        repeat(1, 42rem) //Gryf
+                        repeat(1, 138rem) //Mostek
+                        repeat(1, 122rem) //Podstrunnica
+                        repeat(1, 148rem) //Kolory
+                        repeat(1, 90rem) //F Logo
+                        repeat(1, 44rem) //Nowe Logo
+                        repeat(1, 45rem); //Główka Na Połysk
+    }
+
+    @media only screen and (max-width: $bp-400) {
+
+        grid-template-columns: 1fr;
+        grid-gap: 0rem;
+        grid-template-rows: auto
+                        repeat(1, 40rem) //Przetworniki
+                        repeat(1, 36rem) //22 Progi Medium Jumbo
+                        repeat(1, 118rem) //Konfiguracja Pickupów
+                        repeat(1, 112rem) //Regulacja Tone / Elektronika
+                        repeat(1, 32rem) //Korpus
+                        repeat(1, 32rem) //Gryf
+                        repeat(1, 120rem) //Mostek
+                        repeat(1, 104rem) //Podstrunnica
+                        repeat(1, 128rem) //Kolory
+                        repeat(1, 80rem) //F Logo
+                        repeat(1, 36rem) //Nowe Logo
+                        repeat(1, 40rem); //Główka Na Połysk
+    }
+
+    @media only screen and (max-width: $bp-380) {
+
+        grid-template-columns: 1fr;
+        grid-gap: 0rem;
+        grid-template-rows: auto
+                        repeat(1, 44rem) //Przetworniki
+                        repeat(1, 38rem) //22 Progi Medium Jumbo
+                        repeat(1, 114rem) //Konfiguracja Pickupów
+                        repeat(1, 120rem) //Regulacja Tone / Elektronika
+                        repeat(1, 36rem) //Korpus
+                        repeat(1, 36rem) //Gryf
+                        repeat(1, 122rem) //Mostek
+                        repeat(1, 108rem) //Podstrunnica
+                        repeat(1, 126rem) //Kolory
+                        repeat(1, 80rem) //F Logo
+                        repeat(1, 36rem) //Nowe Logo
+                        repeat(1, 40rem); //Główka Na Połysk
+    }
+
+    @media only screen and (max-width: $bp-360) {
+
+        grid-template-columns: 1fr;
+        grid-gap: 0rem;
+        grid-template-rows: auto
+                        repeat(1, 44rem) //Przetworniki
+                        repeat(1, 40rem) //22 Progi Medium Jumbo
+                        repeat(1, 120rem) //Konfiguracja Pickupów
+                        repeat(1, 126rem) //Regulacja Tone / Elektronika
+                        repeat(1, 38rem) //Korpus
+                        repeat(1, 36rem) //Gryf
+                        repeat(1, 124rem) //Mostek
+                        repeat(1, 108rem) //Podstrunnica
+                        repeat(1, 132rem) //Kolory
+                        repeat(1, 82rem) //F Logo
+                        repeat(1, 40rem) //Nowe Logo
+                        repeat(1, 40rem); //Główka Na Połysk
+    }
+
+    @media only screen and (max-width: $bp-340) {
+
+        grid-template-columns: 1fr;
+        grid-gap: 0rem;
+        grid-template-rows: auto
+                        repeat(1, 48rem) //Przetworniki
+                        repeat(1, 44rem) //22 Progi Medium Jumbo
+                        repeat(1, 126rem) //Konfiguracja Pickupów
+                        repeat(1, 134rem) //Regulacja Tone / Elektronika
+                        repeat(1, 40rem) //Korpus
+                        repeat(1, 36rem) //Gryf
+                        repeat(1, 130rem) //Mostek
+                        repeat(1, 112rem) //Podstrunnica
+                        repeat(1, 136rem) //Kolory
+                        repeat(1, 84rem) //F Logo
+                        repeat(1, 40rem) //Nowe Logo
+                        repeat(1, 42rem); //Główka Na Połysk
+    }
+
+    @media only screen and (max-width: $bp-320) {
+
+        grid-template-columns: 1fr;
+        grid-gap: 0rem;
+        grid-template-rows: auto
+                        repeat(1, 53rem) //Przetworniki
+                        repeat(1, 48rem) //22 Progi Medium Jumbo
+                        repeat(1, 132rem) //Konfiguracja Pickupów
+                        repeat(1, 136rem) //Regulacja Tone / Elektronika
+                        repeat(1, 42rem) //Korpus
+                        repeat(1, 36rem) //Gryf
+                        repeat(1, 136rem) //Mostek
+                        repeat(1, 116rem) //Podstrunnica
+                        repeat(1, 142rem) //Kolory
+                        repeat(1, 84rem) //F Logo
+                        repeat(1, 42rem) //Nowe Logo
+                        repeat(1, 46rem); //Główka Na Połysk
+    }
+
+    @media only screen and (max-width: $bp-300) {
+
+        grid-template-columns: 1fr;
+        grid-gap: 0rem;
+        grid-template-rows: auto
+                        repeat(1, 40rem) //Przetworniki
+                        repeat(1, 38rem) //22 Progi Medium Jumbo
+                        repeat(1, 115rem) //Konfiguracja Pickupów
+                        repeat(1, 120rem) //Regulacja Tone / Elektronika
+                        repeat(1, 34rem) //Korpus
+                        repeat(1, 32rem) //Gryf
+                        repeat(1, 118rem) //Mostek
+                        repeat(1, 102rem) //Podstrunnica
+                        repeat(1, 134rem) //Kolory
+                        repeat(1, 78rem) //F Logo
+                        repeat(1, 34rem) //Nowe Logo
+                        repeat(1, 36rem); //Główka Na Połysk
+    }
+
     grid-template-rows: auto
                     repeat(1, 36rem)// Przetworniki, 22 Progi Medium Jumbo, korpus
-                    repeat(1, 88rem)// Konfiguracja Pickupów
+                    repeat(1, 91rem)// Konfiguracja Pickupów
                     repeat(1, 86rem)// Regulacja Tone / Elektronika
                     repeat(1, 90rem)// Mostek
-                    repeat(1, 86rem)// Podstrunnica
-                    repeat(1, 81rem)// F Logo
+                    repeat(1, 85rem)// Podstrunnica
+                    repeat(1, 75rem)// F Logo
                     repeat(1, 52rem)// Kolory
                     repeat(1, 31rem);// Nowe Logo, Gryf, Główka na połysk
 
@@ -85,12 +391,12 @@
 
             @media only screen and (max-width: $bp-medium) {
                 width: 85rem;
-                height: 45.6rem;
+                height: 52rem;
             }
 
             @media only screen and (max-width: $bp-700) {
                 width: 75rem;
-                height: 42.2rem;
+                height: 50rem;
             }
 
             @media only screen and (max-width: $bp-600) {
@@ -129,31 +435,31 @@
             }
 
             @media only screen and (max-width: $bp-420) {
-                width: 48rem;
+                width: 50rem;
                 height: 42.2rem;
             }
 
             @media only screen and (max-width: $bp-400) {
-                width: 45rem;
+                width: 50rem;
             }
 
             @media only screen and (max-width: $bp-380) {
-                width: 42rem;
-                height: 42.2rem;
+                width: 50rem;
+                height: 40rem;
             }
 
             @media only screen and (max-width: $bp-360) {
-                width: 39rem;
-                height: 42.2rem;
+                width: 48rem;
+                height: 40rem;
             }
 
             @media only screen and (max-width: $bp-340) {
-                width: 36rem;
-                height: 42.2rem;
+                width: 46rem;
+                height: 40rem;
             }
 
             @media only screen and (max-width: $bp-320) {
-                width: 33rem;
+                width: 40rem;
             }
         }
     }
@@ -528,6 +834,11 @@
             grid-template-rows: repeat(2, min-content);
         }
 
+        @media only screen and (max-width: $bp-300) {
+            grid-template-columns: repeat(3, min-content);
+            grid-template-rows: repeat(3, min-content);
+        }
+
         justify-content: space-around;
         align-self: center;
         height: 10rem;
@@ -538,7 +849,6 @@
             &--3ts::before {
                 content: '';
                 display: block;
-                // padding: 1rem;
                 margin: 2rem 1rem;
                 width: 10rem;
                 height: 10rem;
@@ -549,6 +859,11 @@
                 @media only screen and (max-width: $bp-small) {
                     width: 11rem;
                     height: 11rem;
+                }
+
+                @media only screen and (max-width: $bp-400) {
+                    width: 8rem;
+                    height: 8rem;
                 }
             }
 
@@ -567,6 +882,11 @@
                     width: 11rem;
                     height: 11rem;
                 }
+
+                @media only screen and (max-width: $bp-400) {
+                    width: 8rem;
+                    height: 8rem;
+                }
             }
 
             &--bcr::before {
@@ -583,6 +903,11 @@
                 @media only screen and (max-width: $bp-small) {
                     width: 11rem;
                     height: 11rem;
+                }
+
+                @media only screen and (max-width: $bp-400) {
+                    width: 8rem;
+                    height: 8rem;
                 }
             }
 
@@ -601,6 +926,11 @@
                     width: 11rem;
                     height: 11rem;
                 }
+
+                @media only screen and (max-width: $bp-400) {
+                    width: 8rem;
+                    height: 8rem;
+                }
             }
 
             &--sgn::before {
@@ -617,6 +947,11 @@
                 @media only screen and (max-width: $bp-small) {
                     width: 11rem;
                     height: 11rem;
+                }
+
+                @media only screen and (max-width: $bp-400) {
+                    width: 8rem;
+                    height: 8rem;
                 }
             }
 
@@ -635,6 +970,11 @@
                     width: 11rem;
                     height: 11rem;
                 }
+
+                @media only screen and (max-width: $bp-400) {
+                    width: 8rem;
+                    height: 8rem;
+                }
             }
 
             &--tpl::before {
@@ -651,6 +991,11 @@
                 @media only screen and (max-width: $bp-small) {
                     width: 11rem;
                     height: 11rem;
+                }
+
+                @media only screen and (max-width: $bp-400) {
+                    width: 8rem;
+                    height: 8rem;
                 }
             }
         }
